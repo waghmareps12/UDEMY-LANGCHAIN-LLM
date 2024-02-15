@@ -2,9 +2,9 @@ from dotenv import load_dotenv
 from langchain.chains import LLMChain
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
-
+import os
 if __name__ == "__main__":
-    load_dotenv()
+    load_dotenv(r'D:\COURSES\LANGCHAIN-UDEMY\UDEMY-LANGCHAIN-LLM\homeapi.env')
     api_key = os.environ.get("OPENAI_API_KEY")
     print("Hello LangChain")
     information = """
